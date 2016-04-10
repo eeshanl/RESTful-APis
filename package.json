@@ -4,14 +4,14 @@
   "description": "Learning node",
   "main": "app.js",
   "author": "Eeshan Londhe",
-  "license": "swag",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
-    "express":"*",
-    "mongoose": "*",
-    "body-parser": "*"
+    "express":"4.13.4",
+    "mongoose": "4.4.12",
+    "body-parser": "1.15.0"
   },
   "repository": {
     "type": "git",

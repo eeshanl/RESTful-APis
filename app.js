@@ -10,7 +10,9 @@ var mongoose = require('mongoose');
 var Genre = require('./models/genre');
 var Book = require('./models/book');
 
-var port = 8080; // set our port
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
 // MongoDB
 mongoose.connect('eeshan:eeshan@ds017070.mlab.com:17070/eeshan');
@@ -75,5 +77,6 @@ app.post('/api/books', function(request, response) {
 	});
 });
 
-app.listen(port);
-console.log('Magic happens on port ' + port);
+app.listen(server_port, server_ip_address, function() {
+	console.log("Listening on " + server_ip_address + " on port " + server_port);
+});
