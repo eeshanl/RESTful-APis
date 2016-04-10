@@ -1,0 +1,20 @@
+{
+  "name": "testapp",
+  "version": "0.0.1",
+  "description": "Learning node",
+  "main": "server.js",
+  "author": "Eeshan Londhe",
+  "license": "swag",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express":"*",
+    "mongoose": "*",
+    "body-parser": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eeshanl/RESTful-APis"
+  }
+}
