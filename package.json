@@ -2,11 +2,11 @@
   "name": "testapp",
   "version": "0.0.1",
   "description": "Learning node",
-  "main": "server.js",
+  "main": "app.js",
   "author": "Eeshan Londhe",
   "license": "swag",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "express":"*",
